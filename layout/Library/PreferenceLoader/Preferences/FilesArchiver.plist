@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = FilesArchiverPrefs;
+		cell = PSLinkCell;
+		detail = FARootListController;
+		icon = icon.png;
+		isController = 1;
+		label = "Files Archiver";
+	};
+}

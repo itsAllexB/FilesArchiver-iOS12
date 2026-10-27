@@ -1,0 +1,9 @@
+Package: com.itsallexb.filesarchiver
+Name: FilesArchiver (iOS 12)
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Uncompress and Compress in the Files app on iOS 12, like iOS 13. Extracts zip, 7z, rar, tar, tar.gz, tar.bz2, tar.xz, gz, bz2, xz and more; creates zip, tar.gz or 7z. Settings > Files Archiver.
+Maintainer: itsAllexB
+Author: itsAllexB
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, firmware (>= 12.0), firmware (<< 13.0), libarchive13 (>= 3.6)

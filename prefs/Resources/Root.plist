@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Adds Uncompress and Compress to the menu you get by touching and holding a file or folder in the Files app. Compress also appears at the top when you select several items.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesarchiver/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsallexb.filesarchiver</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Zip opens almost everywhere (Windows, macOS, iOS 13 and later). Tar + Gzip keeps file permissions. 7-Zip makes the smallest archives but is slower.</string>
+			<key>label</key>
+			<string>Compress</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesarchiver/prefschanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>zip</string>
+			<key>defaults</key>
+			<string>com.itsallexb.filesarchiver</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>compressFormat</string>
+			<key>label</key>
+			<string>Format</string>
+			<key>shortTitles</key>
+			<array>
+				<string>Zip</string>
+				<string>Tar + Gzip</string>
+				<string>7-Zip</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Zip (.zip)</string>
+				<string>Tar + Gzip (.tar.gz)</string>
+				<string>7-Zip (.7z)</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>zip</string>
+				<string>tar.gz</string>
+				<string>7z</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>With Extract into a Folder on, an archive that holds several items is extracted into a folder named after it; a single file or folder is placed next to the archive as is. Deleted archives go to Recently Deleted where the location has it. Mac metadata means __MACOSX folders, ._ files and .DS_Store.</string>
+			<key>label</key>
+			<string>Uncompress</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesarchiver/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsallexb.filesarchiver</string>
+			<key>key</key>
+			<string>extractIntoFolder</string>
+			<key>label</key>
+			<string>Extract into a Folder</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesarchiver/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.itsallexb.filesarchiver</string>
+			<key>key</key>
+			<string>deleteAfterExtract</string>
+			<key>label</key>
+			<string>Delete Archive After Extracting</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesarchiver/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsallexb.filesarchiver</string>
+			<key>key</key>
+			<string>skipMetadata</string>
+			<key>label</key>
+			<string>Skip Mac Metadata</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Uncompress: zip (also with a password), 7z, rar and rar5, tar, tar.gz/tgz, tar.bz2, tar.xz, tar.zst, gz, bz2, xz, lzma, zst, lz4, cpio, xar, iso, cab, lha, ar/deb, ipa, cbz/cbr/cb7.
+Compress: zip, tar.gz, 7z.
+Password-protected 7z and rar archives cannot be opened.</string>
+			<key>label</key>
+			<string>Supported Formats</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Files Archiver</string>
+</dict>
+</plist>
